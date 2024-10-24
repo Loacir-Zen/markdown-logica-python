@@ -36,7 +36,9 @@ print('Olá' in 'Olá novamente')
 
 
 
-## Variáveis
+## Declaração de Variáveis
+
+Diferentemente da linguagem C++, as variáveis em Python não são declaradas explicitamente
 
 ```python
 
@@ -49,7 +51,28 @@ print(nome)
 ```
 
 
+## Tipos de Variáveis
+
+```python
+
+faturamento = 1000
+print(type(faturamento))
+
+faturamento = 1000.00
+print(type(faturamento))
+
+faturamento = '1000.00'
+print(type(faturamento))
+
+faturamento = True
+print(type(faturamento))
+
+```
+
+
 ## Input - Pegando informações do Usuários
+
+Fazendo a leitura de uma string(str)
 
 ```python
 
@@ -58,3 +81,29 @@ sobrenome = input("Qual é o seu sobrenome? ")
 print(nome + ' ' + sobrenome)
 
 ```
+
+Convertendo o input do tipo str para tipo float
+
+```python
+
+faturamento = float(input("Insira o faturamento: "))
+custo = float(input("Insira o custo: "))
+
+lucro = faturamento - custo 
+print(lucro)
+
+```
+
+## Format e f-string
+
+```python
+
+# com format 
+print("O faturamento foi de {} e o lucro de {}" .format(faturamento, lucro))
+
+# com f-string
+print(f"O faturamento foi de {faturamento} e o lucro de {lucro}")
+
+```
+
+
